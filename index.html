@@ -447,6 +447,41 @@
   .link-btn:hover{transform:translateY(-2px);}
   .link-btn svg{width:1.05rem; height:1.05rem;}
 
+  /* ---- finale ---- */
+  .finale-slide{
+    background:linear-gradient(160deg,var(--teal-dark) 0%,var(--teal-primary) 60%,var(--teal-light) 100%);
+    color:var(--white);
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+  .finale-lines{max-width:72ch; margin:0 auto;}
+  .finale-line{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:clamp(1.6rem,2.9vw,2.4rem);
+    line-height:1.4;
+    color:rgba(255,255,255,.9);
+    margin:0 0 1.1rem;
+  }
+  .finale-highlight-wrap{margin-top:1.8rem;}
+  .finale-highlight{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-style:normal;
+    font-size:clamp(2.2rem,4.4vw,3.6rem);
+    letter-spacing:.01em;
+    color:var(--white);
+    line-height:1.15;
+    margin:0;
+  }
+  .finale-underline{
+    width:5rem; height:6px; border-radius:4px;
+    background:var(--gold);
+    margin:1.3rem auto 0;
+  }
+
   /* ---- nav ---- */
   #nav{
     position:fixed; bottom:0; left:0; right:0; height:6.5vh;
@@ -881,10 +916,22 @@
     </div>
   </section>
 
+  <!-- 24 : finale -->
+  <section class="slide finale-slide" data-theme="dark">
+    <div class="finale-lines">
+      <p class="finale-line">Quando você quer e decide,<br>você faz.</p>
+      <p class="finale-line">Se ainda não fez, é porque<br>não quis o suficiente.</p>
+      <div class="finale-highlight-wrap">
+        <p class="finale-highlight">Seja um grato, inconformado.</p>
+        <div class="finale-underline"></div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <div id="nav">
-  <div id="counter">01 / 23</div>
+  <div id="counter">01 / 24</div>
   <div id="dots"></div>
   <div class="navbtns">
     <button id="prevBtn" aria-label="Slide anterior">‹</button>
